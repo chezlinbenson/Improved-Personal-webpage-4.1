@@ -1,24 +1,17 @@
 <!DOCTYPE html>
-<html lang="en" >
-<head>
-  <meta charset="UTF-8">
-  <title>CodePen - Improved Personal Home Page 4.1</title>
-  <link rel='stylesheet' href='https://unpkg.com/jest-lite@1.0.0-alpha.4/dist/prettify.css'><link rel="stylesheet" href="./style.css">
-
-</head>
-<body>
-<!-- partial:index.partial.html -->
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
   <title>Design Meets Tech.</title>
+  <link href="style.css" rel="stylesheet" >
 </head>
 
-<body>
+<body id="pagemode">
   <header class="c-site-header">
     <h1>Design<span>Meets</span>Tech.</h1>
     <nav aria-label="Main Site Links.">
+      <button id="daymode" class="modebuttons">Day Mode</button>
+      <button id="nightmode" class="modebuttons"> Night Mode</button>
       <a href="#About">About</a>
       <a href="#Journey">My Journey</a>
       <a href="#Influences">Influences</a>
@@ -31,8 +24,11 @@
     <article>
       <h2 id="About">About</h2>
       <div class="about">
-        <img class="web-developers" src="https://drive.google.com/uc?export=view&id=1XWqq_M3oY1-Apg_TaWGNJ2AN_of8i27q" alt="Male and female sitting at table with laptops" style="width:75%;height:75%;">
-
+      <div class="imgbar">
+        <img id="changeimg" class="web-developers" src="https://drive.google.com/uc?export=view&id=1XWqq_M3oY1-Apg_TaWGNJ2AN_of8i27q" alt="Male and female sitting at table with laptops" style="width:75%;height:75%;">
+        <button id="changebtn">Click Me</button>
+      </div>
+        
         <p>
           Creativity is the foundation of this world. All things are shaped through the practice and disciplines of many brilliant minds over centuries. The great Leonardo Da Vinci was seen as a world influencer, followed by his amazing inventions,sculptures and paintings. Leonardo was a multidisciplinary artist. His name has made a great mark alongside other greats.<br><br>
           Design has evolved into a more innovative and problem solving field. Foundings of great inventors discovered design methodologies and interventions. Design thinking has has influenced many practices. The idea that design is not to create beautiful pictures etc., but it serves as innovative problem solving practices.<br><br>
@@ -72,13 +68,7 @@
 Don't delete!-->
   <aside id="tests" aria-label="Test Readout." aria-live="polite" style="overflow:auto">
   </aside>
-
+  <script src="script.js"></script>
 </body>
 
-</html>
-<!-- partial -->
-  <script src='https://unpkg.com/jest-lite@1.0.0-alpha.4/dist/core.js'></script>
-<script src='https://unpkg.com/jest-lite@1.0.0-alpha.4/dist/prettify.js'></script><script  src="./script.js"></script>
-
-</body>
 </html>
