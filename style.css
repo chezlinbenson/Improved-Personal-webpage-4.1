@@ -7,6 +7,8 @@ body {
   width: 100%;
 }
 
+
+
 h1 {
   font-size: 7vw;
   font-family: "Gravitas One";
@@ -14,6 +16,7 @@ h1 {
   top: 300px;
   left: 16px;
   text-shadow: 2px 2px 5px white;
+  color: #000;
 }
 
 img {
@@ -43,6 +46,12 @@ nav {
 a {
   font-family: Lato;
   padding-right: 10px;
+}
+
+.modebuttons{
+   background-color: #e4d00a;
+   color: #000;
+  margin: 10px;
 }
 
 a:link {
@@ -115,7 +124,20 @@ span {
   display: grid;
   grid-template-columns: 50% 50%;
   grid-column-gap: 20px;
-  align-items: center;
+  
+}
+
+.imgbar {
+  text-align: left;
+}
+
+button {
+  background-color: #000;
+  color: #e4d00a;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin-left:  150px;
 }
 
 .influences {
@@ -124,6 +146,7 @@ span {
 
 iframe {
   padding: 10px;
+  border: none;
 }
 
 .video {
