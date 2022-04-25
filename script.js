@@ -1,3 +1,23 @@
+document.getElementById('changebtn').addEventListener('click', (event) => {
+  let element_changeimg = document.getElementById('changeimg');
+  element_changeimg.setAttribute("src", 'https://images.unsplash.com/photo-1534670007418-fbb7f6cf32c3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTh8fHV4JTIwdWklMjBkZXNpZ258ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60');
+  event.target.innerText = 'Refresh Page';
+  event.target.style.backgroundColor = '#ffff00';
+  event.target.style.color = '#000000';
+});
+
+document.getElementById('nightmode').addEventListener('click', (event) => {
+  let element_nightmode = document.getElementById('pagemode');
+  element_nightmode.style.backgroundColor = '#1d1b1f';
+  element_nightmode.style.color = '#ffffff';
+});
+
+document.getElementById('daymode').addEventListener('click', (event) => {
+  let element_daymode = document.getElementById('pagemode');
+  element_daymode.style.backgroundColor = '#ffffff';
+  element_daymode.style.color = 'black';
+});
+
 /* =================
   TESTS, LOOK AT THESE
   Reading tests will always help you discover your requirements.
