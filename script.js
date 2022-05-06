@@ -41,3 +41,44 @@ document.getElementById('daymode').addEventListener('click', (event) => {
   element_daymode.style.backgroundColor = '#ffffff';
   element_daymode.style.color = 'black';
 });
+
+var cart, item, price;
+
+
+cart = [];
+price = [];
+
+
+document.getElementById('add1').addEventListener('click', (event) => {
+  cart.push('Graphic Design Services');
+  price.push(1500);
+  let mycart = getElementById('shopcart');
+  if (mycart.style.display === "none") {
+  mycart.style.display === "block";}
+
+});
+
+document.getElementById('add2').addEventListener('click', (event) => {
+  cart.push('Photo Editing Services');
+  price.push(2400);
+
+});
+
+document.getElementById('add3').addEventListener('click', (event) => {
+  cart.push('Web Design Services');
+  price.push(7800);
+
+});
+
+document.getElementById('myitems').addEventListener('click', (event) => {
+  cart.forEach((item) => {
+    let element_mycart = document.getElementById('mycart');
+    let new_li = document.createElement('li');
+    new_li.innerText = item;
+
+    element_mycart.appendChild(new_li);
+  });
+  let element_balance = document.getElementById('balance');
+  element_balance.innerText = price.reduce((a,b) => a+b, 0);
+
+});
